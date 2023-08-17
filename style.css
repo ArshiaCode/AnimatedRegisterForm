@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main, form, #email-lable, #email, #password-label, #password, #submit{
+    display: flex;
+ }
+main{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    animation: gradient-change 2s infinite alternate;
+    background-image: linear-gradient(to right,lightgray, lightblue);
+    background-size: 200% 200%;
+}
+form{
+    max-width: 800px;
+    width: 500px;
+    flex-direction: column;
+    background-color: lightblue;
+    height: 400px;
+    max-height: 700px;
+    justify-content: space-around;
+    border-radius: 3%;
+    box-shadow: 0 0 30px gray;
+}
+input{
+    outline: 0;
+}
+#email-lable, #email, #password-label, #password, #submit{
+    align-self: center;
+}
+#email{
+    height: 40px;
+    width: 50%;
+}
+#password{
+    height: 40px;
+    width: 50%;
+}
+
+@keyframes gradient-change{
+    0%{
+        background-position: top left;
+    }
+    50%{
+        background-position: center;
+    }
+    100%{
+        background-position: right bottom;
+    }
+}
